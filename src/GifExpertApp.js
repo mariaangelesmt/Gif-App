@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import { AddCategory } from './components/AddCategory';
 
-const GifExpertApp = props => {
+export const GifExpertApp = props => {
+
+    const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
+
+    // const handleAdd = () => {
+    //     setCategories([...categories, 'HunterXHunter']);
+    // }
+
     return (
         <>
             <h2>GifExpertApp</h2>
-            <hr/>    
+            <AddCategory setCategories={ setCategories } />
+            <hr/> 
+
+
+            <ol>
+                {
+                    categories.map(category => {
+                        return <li key={ category }>{ category }</li>
+                    })
+                }
+            </ol>
         </>
     )
 }
