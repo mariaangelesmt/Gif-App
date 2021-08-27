@@ -1,6 +1,6 @@
 # Gif Expert App
 
-Gif expert app developed in React and where we use the [giphyApi](https://developers.giphy.com/docs/api/endpoint) to get the data.
+Gif expert app developed in React with Hooks to search and show animated gifs. Where we use the [giphyApi](https://developers.giphy.com/docs/api/endpoint) to get the data.
 
 ## Available Scripts
 
